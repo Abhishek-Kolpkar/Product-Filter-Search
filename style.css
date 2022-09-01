@@ -59,7 +59,7 @@ body{
 #products{
   display: grid;
   grid-template-columns: auto auto auto;
-  grid-column-gap: 1.2em;
+  grid-column-gap: 1em;
   padding: 2em 0;
 }
 .card{
@@ -78,4 +78,36 @@ img{
   object-fit: contain;
   height: 15em;
 }
+
+.container{
+  padding-top: 1em;
+  color: #110f29;
+}
+.container h5{
+  font-weight: 500;
+}
+.hide{
+  display: none
+  ;
+}
 /*********************************** general CSS end ***********************************/
+
+
+/*********************************** Media-query start ***********************************/
+
+@media screen and (max-width: 720px) {
+  img{
+    max-width: 100%;
+    object-fit: contain;
+    height: 10em;
+  }
+  .card{
+    max-width: 10em;
+    margin-top: 1em;
+  }
+  #products{
+    grid-template-columns: auto auto;
+    grid-column-gap: 1em;
+  }
+}
+/*********************************** Media-query end ***********************************/
