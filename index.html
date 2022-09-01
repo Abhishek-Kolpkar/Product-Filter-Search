@@ -9,7 +9,23 @@
   <link rel="stylesheet" href="./style.css">
 </head>
 <body>
-  
+  <div class="wrapper">
+    <!-- search-container -->
+    <div id="search-container">
+      <input type="search" id="search-input" placeholder="Search product name here...">
+      <button id="search">Search</button>
+    </div>
+    <!-- buttons -->
+    <div id="buttons">
+      <button class="button-value" onclick="filterProduct('all')">All</button>
+      <button class="button-value" onclick="filterProduct('Topwear')">Topwear</button>
+      <button class="button-value" onclick="filterProduct('Bottomwear')">Bottomwear</button>
+      <button class="button-value" onclick="filterProduct('Jacket')">Jacket</button>
+      <button class="button-value" onclick="filterProduct('Watch')">Watch</button>
+    </div>
+    <!-- products -->
+    <div id="products"></div>
+  </div>
 
 
   <!-- JavaScript file -->
